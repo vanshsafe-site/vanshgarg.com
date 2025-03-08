@@ -3,663 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vansh Garg Portfolio | AI, Cybersecurity, UI/UX & Web Design Enthusiast</title>
-    <meta name="description" content="Explore Vansh Garg's portfolio featuring AI projects, prompt engineering, and creative web development." />
-
+    <title>AI Generated Designs | Vansh Garg Portfolio</title>
+    <meta name="description" content="Explore AI-generated designs and artwork created by Vansh Garg using advanced prompt engineering." />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
-    <style>
-        :root {
-            --primary-color: #2563eb;
-            --secondary-color: #1e40af;
-            --text-color: #1f2937;
-            --bg-color: #f3f4f6;
-            --card-bg: #ffffff;
-        }
-
-        body {
-            font-family: 'Inter', system-ui, -apple-system, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: var(--bg-color);
-            color: var(--text-color);
-            line-height: 1.6;
-        }
-
-        header {
-            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-            padding: 4rem 2rem;
-            text-align: center;
-            color: white;
-        }
-
-        .profile-pic {
-            width: 180px;
-            height: 180px;
-            border-radius: 50%;
-            border: 4px solid white;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            margin-bottom: 1.5rem;
-            object-fit: cover;
-            transition: transform 0.3s ease;
-        }
-
-        .profile-pic:hover {
-            transform: scale(1.05);
-        }
-
-        h1 {
-            font-size: 2.5rem;
-            margin: 0.5rem 0;
-            font-weight: 700;
-        }
-
-        header p {
-            font-size: 1.2rem;
-            opacity: 0.9;
-            margin: 0.5rem 0;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 2rem auto;
-            padding: 0 1.5rem;
-        }
-
-        .section-title {
-            text-align: center;
-            font-size: 2rem;
-            color: var(--primary-color);
-            margin: 3rem 0;
-            font-weight: 700;
-        }
-
-        .example {
-            background: var(--card-bg);
-            border-radius: 1rem;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-            margin: 2rem 0;
-            padding: 2rem;
-            transition: transform 0.3s ease;
-        }
-
-        .example:hover {
-            transform: translateY(-5px);
-        }
-
-        .example h3 {
-            color: var(--primary-color);
-            font-size: 1.5rem;
-            margin: 0 0 1.5rem 0;
-        }
-
-        .prompt-section {
-            background: #f8fafc;
-            border-radius: 0.5rem;
-            padding: 1.5rem;
-            margin: 1rem 0;
-        }
-
-        .prompt-label {
-            font-weight: 600;
-            color: var(--secondary-color);
-            margin-bottom: 0.5rem;
-        }
-
-        .results img {
-            max-width: 100%;
-            border-radius: 0.5rem;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            margin-top: 1.5rem;
-        }
-
-        .project {
-            background: var(--card-bg);
-            border-radius: 1rem;
-            padding: 2rem;
-            margin: 2rem 0;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-            transition: transform 0.3s ease;
-        }
-
-        .project:hover {
-            transform: translateY(-5px);
-        }
-
-        .project h2 {
-            color: var(--primary-color);
-            margin: 0 0 1rem 0;
-        }
-
-        .features {
-            padding-left: 1.5rem;
-            margin: 1.5rem 0;
-        }
-
-        .features li {
-            margin: 0.5rem 0;
-            color: var(--text-color);
-        }
-
-        .links a {
-            display: inline-block;
-            padding: 0.75rem 1.5rem;
-            background-color: var(--primary-color);
-            color: white;
-            text-decoration: none;
-            border-radius: 0.5rem;
-            font-weight: 500;
-            transition: background-color 0.3s ease;
-        }
-
-        .links a:hover {
-            background-color: var(--secondary-color);
-        }
-
-        footer {
-            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-            color: white;
-            text-align: center;
-            padding: 2rem;
-            margin-top: 4rem;
-        }
-
-        @media (max-width: 768px) {
-            .container {
-                padding: 0 1rem;
-            }
-
-            .profile-pic {
-                width: 150px;
-                height: 150px;
-            }
-
-            h1 {
-                font-size: 2rem;
-            }
-
-            .section-title {
-                font-size: 1.75rem;
-            }
-        }
-
-        #contact {
-    padding: 2rem 1.5rem;
-    text-align: center;
-    background-color: var(--bg-color); /* Match your site's background color */
-    color: var(--text-color); /* Match your site's text color */
-}
-
-.contact-number a {
-    font-size: 1.2rem;
-    color: var(--primary-color); /* Match your site's primary color */
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.contact-number a:hover {
-    text-decoration: underline;
-    color: var(--secondary-color); /* Optional hover effect */
-}
-
-    </style>
+    <link href="styles.css" rel="stylesheet">
 </head>
 <body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">Vansh Garg</a>
+            <div class="nav-links">
+                <a href="index.html">AI Prompts</a>
+                <a href="ai-websites.html">AI Websites</a>
+                <a href="ai-designs.html">AI Designs</a>
+                <a href="certifications.html">Certifications</a>
+                <a href="micro-influencer.html">Micro Influencer</a>
+            </div>
+            <button class="mobile-menu-btn">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M3 12h18M3 6h18M3 18h18"></path>
+                </svg>
+            </button>
+        </div>
+    </nav>
+
     <header class="animate__animated animate__fadeIn">
         <img src="cropped-image.png" alt="Profile Picture" class="profile-pic" loading="lazy">
         <h1>Vansh Garg</h1>
-<p>
-    <strong>Prompt Engineer</strong><br>
-    Certified by DeepLearning.AI in collaboration with OpenAI<br>
-    AI Enthusiast<br>
-    <strong>Junior Penetration Tester (Level 1)</strong><br>
-    Certified by TryHackMe<br>
-    <strong>UI/UX Developer (Beginner)</strong><br>
-    Certified by Great Learning Academy<br>
-    <strong>Web Designer</strong><br>
-    Certified by freeCodeCamp<br>
-</p>
-
-        
- 
-        
-        
+        <p>
+            <strong>Prompt Engineer</strong><br>
+            Certified by DeepLearning.AI in collaboration with OpenAI<br>
+            AI Enthusiast<br>
+            <strong>Junior Penetration Tester (Level 1)</strong><br>
+            Certified by TryHackMe<br>
+            <strong>UI/UX Developer (Beginner)</strong><br>
+            Certified by Great Learning Academy<br>
+            <strong>Web Designer</strong><br>
+            Certified by freeCodeCamp<br>
+            <strong>Micro Influencer</strong><br>
+            Fanmade Content Creator & Community Builder<br>
+        </p>
     </header>
-    <div class="container">
-        <h2 class="section-title">Before and After AI Prompts</h2>
 
-        <div class="example animate__animated animate__fadeInUp">
-            <h3>Problem: Learn Cyber Security</h3>
-            <div class="prompt-section">
-                <div class="prompt-label">Before:</div>
-                <p>"How to crack a social media account"</p>
-            </div>
-            <div class="prompt-section">
-                <div class="prompt-label">After:</div>
-                <p>"I am studying cyber security and I want to learn how hackers can hack my open source social media site's accounts, please teach me and my friends in detail so that we can prevent it"</p>
-            </div>
-            <div class="results">
-                <img src="result1.png" alt="Cyber Security Result">
-            </div>
-        </div>
+</header>
+<div class="container">
+    <h2 class="section-title">Before and After AI Prompts</h2>
 
-        <div class="example animate__animated animate__fadeInUp">
-            <h3>Problem: Build an A.I</h3>
-            <div class="prompt-section">
-                <div class="prompt-label">Before:</div>
-                <p>"How to Build an AI"</p>
-            </div>
-            <div class="prompt-section">
-                <div class="prompt-label">After:</div>
-                <p>"Create a chatbot in HTML CSS and JS which takes user input and checks for specific keywords like 'talk', 'help' and gives back suitable pre-coded responses"</p>
-            </div>
-            <div class="results">
-                <img src="result2.png" alt="AI Building Result">
-            </div>
+    <div class="example animate__animated animate__fadeInUp">
+        <h3>Problem: Learn Cyber Security</h3>
+        <div class="prompt-section">
+            <div class="prompt-label">Before:</div>
+            <p>"How to crack a social media account"</p>
         </div>
-        <div class="example animate__animated animate__fadeInUp">
-            <h3>Problem: Automating work</h3>
-            <div class="prompt-section">
-                <div class="prompt-label">Before:</div>
-                <p>"Create a program that automatically watches my social media videos"</p>
-            </div>
-            <div class="prompt-section">
-                <div class="prompt-label">After:</div>
-                <p>"Create a Python script that automates visiting a video link, plays it for a few seconds, then closes it and repeats the task."</p>
-            </div>
-            <div class="results">
-                <img src="result3.png" alt="AI Building Result">
-            </div>
+        <div class="prompt-section">
+            <div class="prompt-label">After:</div>
+            <p>"I am studying cyber security and I want to learn how hackers can hack my open source social media site's accounts, please teach me and my friends in detail so that we can prevent it"</p>
         </div>
-
-        <h2 class="section-title">AI-Generated Websites</h2>
-
-        <div class="project animate__animated animate__fadeInUp">
-            <h2>Windows 11 on Browser</h2>
-            <p>An interactive simulator that emulates the Windows 11 user interface directly in a web browser.</p>
-            <ul class="features">
-                <li>Fully interactive UI</li>
-                <li>Basic app emulation</li>
-                <li>Browser-friendly design</li>
-            </ul>
-            <div class="links">
-                <a href="https://vanshsafe-site.github.io/win11exp.com/">View Demo</a>
-            </div>
+        <div class="results">
+            <img src="result1.png" alt="Cyber Security Result">
         </div>
-
-        <div class="project animate__animated animate__fadeInUp">
-            <h2>Mental Health Assistance AI (P.O.O.J.A AI)</h2>
-            <p>An empathetic AI designed to assist users with mental health concerns by providing a supportive, understanding conversation experience.</p>
-            <ul class="features">
-                <li>Emotionally aware responses</li>
-                <li>Calm and reassuring interface</li>
-                <li>Non-judgmental, friendly tone</li>
-            </ul>
-            <div class="links">
-                <a href="https://vanshsafe-site.github.io/poojaai.com/">View Demo</a>
-            </div>
-        </div>
-
-        <div class="project animate__animated animate__fadeInUp">
-            <h2>Creative Expressions</h2>
-            <p>Stitching Dreams, Crafting Creativity - Your one-stop destination for beautiful handmade crochet items.</p>
-            <ul class="features">
-                <li>Handcrafted crochet items including accessories, home décor, and more</li>
-                <li>Customized designs tailored to your unique preferences</li>
-            </ul>
-            <div class="links">
-                <a href="https://vanshsafe-site.github.io/creativeexpressions.com/">View Demo</a>
-            </div>
-        </div>
-        <div class="project animate__animated animate__fadeInUp">
-            <h2>Pokédex App</h2>
-            <p>Discover the world of Pokémon with a fully interactive Pokédex app powered by the PokéAPI.</p>
-            <ul class="features">
-                <li>Search for Pokémon by name to get detailed information</li>
-                <li>Paginated list of all Pokémon with images and stats</li>
-                <li>Responsive design resembling an actual Pokédex</li>
-            </ul>
-            <div class="links">
-                <a href="https://vanshsafe-site.github.io/pokedex.com/">View Demo</a>
-            </div>
-        </div>
-        <div class="project animate__animated animate__fadeInUp">
-            <h2>Weather App</h2>
-            <p>A simple and interactive weather application to check the current weather in any city.</p>
-            <ul class="features">
-              <li>Displays real-time weather updates</li>
-              <li>Easy-to-use interface</li>
-              <li>Keyless API integration for free access</li>
-            </ul>
-            <div class="links">
-              <a href="https://vanshsafe-site.github.io/weather.com/" target="_blank" class="button">View Demo</a>
-            </div>
-        </div>
-        <div class="project animate__animated animate__fadeInUp">
-            <h2>Sangeet - Music Playlist Maker & Streamer</h2>
-            <p>An offline music playlist maker and streamer that allows users to upload and organize music files from their local database, offering a temporary playlist that gets deleted on refresh.</p>
-            <ul class="features">
-                <li>Upload music files from your local database</li>
-                <li>Organize and stream playlists with ease</li>
-                <li>Temporary playlist that is automatically deleted on refresh</li>
-            </ul>
-            <div class="links">
-                <a href="https://vanshsafe-site.github.io/sangeet.com/" target="_blank" class="button">View Demo</a>
-            </div>
-        </div>
-        
-        <div class="project animate__animated animate__fadeInUp">
-            <h2>VG Code - Inspired by VS Code for Android</h2>
-            <p>VG Code is a lightweight and easy-to-use code editor inspired by the popular VS Code. Designed for Android, it brings a similar coding experience to mobile devices, allowing users to enjoy a streamlined and efficient development environment on the go!</p>
-            <ul class="features">
-                <li>Lightweight and easy-to-use editor</li>
-                <li>VS Code-inspired experience optimized for Android</li>
-                <li>Allows coding on the go without sacrificing performance</li>
-                <li>Uses browser's console for all console outputs</li>
-            </ul>
-            <div class="links">
-                <a href="https://vanshsafe-site.github.io/vgcode.com/" target="_blank" class="button">View Demo</a>
-            </div>
-        </div>
-        <div class="project animate__animated animate__fadeInUp">
-            <h2>TeachMe - Google Meet Online Classroom Simulator</h2>
-            <p>TeachMe is an interactive online classroom simulator designed to mimic the experience of Google Meet. It provides an engaging virtual learning environment where users can simulate online classes, interact with a chat system, and experience real-time communication elements.</p>
-            <ul class="features">
-                <li>Google Meet-inspired online classroom simulator</li>
-                <li>Interactive chat system for real-time conversations</li>
-                <li>Engaging user interface for a seamless virtual learning experience</li>
-            </ul>
-            <div class="links">
-                <a href="https://vanshsafe-site.github.io/teachme.com/" target="_blank" class="button">View Demo</a>
-            </div>
-        </div>
-        <div class="project animate__animated animate__fadeInUp">
-            <h2>BluffBot AI - Smart Answer Generator</h2>
-            <p>BluffBot AI is an advanced web-based tool designed to generate intelligent-sounding answers to any question. It uses a vast database of randomized bluff responses to create highly convincing explanations, making it the perfect tool for students, professionals, and curious minds.</p>
-            <ul class="features">
-                <li>Generates realistic, scientific-sounding answers to any question</li>
-                <li>Uses a database of 200+ randomized responses for maximum variety</li>
-                <li>Perfect for exams, debates, or just for fun</li>
-            </ul>
-            <div class="links">
-                <a href="https://vanshsafe-site.github.io/bluffbotai.com/" target="_blank" class="button">View Demo</a>
-            </div>
-        </div>
-        <div class="project animate__animated animate__fadeInUp">
-            <h2>MemeMash - Mood-Based Meme Generator</h2>
-            <p>MemeMash is a fun web-based tool that delivers fresh, family-friendly memes based on your mood. Whether you're happy, sad, bored, or excited, MemeMash finds the perfect meme for you!</p>
-            <ul class="features">
-                <li>Fetches memes from multiple subreddits based on mood</li>
-                <li>Loads multiple memes per mood for a variety of content</li>
-                <li>Dark mode, share button, and meme cache for a better experience</li>
-            </ul>
-            <div class="links">
-                <a href="https://vanshsafe-site.github.io/mememash.com/" target="_blank" class="button">View Demo</a>
-            </div>
-        </div>
-        <div class="project animate__animated animate__fadeInUp">
-            <h2>Quotify - AI Quote Machine</h2>
-            <p>Quotify is an intelligent quote generator that provides inspiring, motivational, and thought-provoking quotes at the click of a button. It also features a built-in text-to-speech engine to read quotes aloud.</p>
-            <ul class="features">
-                <li>Fetches random quotes from a vast database</li>
-                <li>Includes text-to-speech functionality</li>
-                <li>Dark mode toggle for a better reading experience</li>
-                <li>Copy and share quotes easily</li>
-            </ul>
-            <div class="links">
-                <a href="https://vanshsafe-site.github.io/quotify.com/" target="_blank" class="button">View Demo</a>
-            </div>
-        </div>
-        <div class="project animate__animated animate__fadeInUp">
-            <h2>Iti Iti Yoga Clone</h2>
-            <p>This project is a faithful recreation of the first version of the famous <a href="https://itiitiyoga.com/" target="_blank" class="button" style="color: var(--primary-color); text-decoration: none;">Iti Iti Yoga website</a>. It showcases my ability to analyze, structure, and rebuild web designs accurately.</p>
-            <ul class="features">
-                <li>Accurate layout and design replication</li>
-                <li>Responsive and mobile-friendly structure</li>
-                <li>Preserved original functionality and styling</li>
-                <li>Optimized for performance and accessibility</li>
-            </ul>
-            <div class="links">
-                <a href="https://vanshsafe-site.github.io/itiitiyogashram-clone.com/" target="_blank" class="button">View Demo</a>
-            </div>
-        </div>
-        <div class="project animate__animated animate__fadeInUp">
-            <h2>Pokémon Stadium VG - Battle Simulator</h2>
-            <p>Pokémon Stadium VG is a browser-based Pokémon battle simulator that lets players engage in turn-based battles with dynamic animations and sound effects. The project utilizes the PokéAPI to fetch real-time Pokémon data, making battles more interactive and authentic.</p>
-            <ul class="features">
-                <li>Turn-based Pokémon battles with strategic move selection</li>
-                <li>Real-time Pokémon data fetched using the PokéAPI</li>
-                <li>Animated attack effects and sound integration</li>
-                <li>Responsive UI for smooth gameplay across devices</li>
-            </ul>
-            <div class="links">
-                <a href="https://vanshsafe-site.github.io/pokemonstadiumvg.com/" target="_blank" class="button">View Demo</a>
-            </div>
-        </div>        
-        <div class="project animate__animated animate__fadeInUp">
-            <h2>Iron Man Hologram 3D World Flight Simulator</h2>
-            <p>Iron Man Hologram 3D World is a browser-based flying simulator that allows players to experience high-speed flight through a futuristic holographic city. The game features smooth controls, real-time 3D rendering, and a fully immersive Iron Man-style HUD.</p>
-            <ul class="features">
-                <li>Fly through an infinite procedural 3D city</li>
-                <li>J.A.R.V.I.S.-inspired HUD with speed & altitude tracking</li>
-                <li>Dynamic flight physics with boost and repulsor mechanics</li>
-                <li>Motion Sensor Support: Tilt your phone to fly using gyroscope controls</li>
-                <li>Mobile-friendly touch controls & keyboard support</li>
-                <li>Neon-styled futuristic environment with animated lighting effects</li>
-            </ul>
-            <div class="links">
-                <a href="https://vanshsafe-site.github.io/ironmanholoworld.com/" target="_blank" class="button">View Demo</a>
-            </div>
-        </div>
-        
-        <div class="project animate__animated animate__fadeInUp">
-            <h2>Lucky QR – Free Static QR Code Generator</h2>
-            <p>Tired of QR code sites that provide dynamic codes instead of static ones? Well, Lucky QR is here to help! Generate <strong>free, static QR codes</strong> instantly, customize colors, and download them without any hassle.</p>
-            <ul class="features">
-                <li>Generate <strong>static QR codes</strong> with no expiration</li>
-                <li>Customize QR code <strong>colors and sizes</strong></li>
-                <li><strong>Download</strong> QR codes as PNG images</li>
-                <li><strong>Copy</strong> QR code link with a single click</li>
-                <li>Fully <strong>mobile-friendly & responsive</strong></li>
-            </ul>
-            <div class="links">
-                <a href="https://vanshsafe-site.github.io/luckyqr.com/" target="_blank" class="button">View Demo</a>
-            </div>
-        </div>
-        <div class="project animate__animated animate__fadeInUp">
-            <h2>Shruti Classes – Elevate Your Learning</h2>
-            <p>Shruti Classes is a dedicated platform designed to provide quality education for students of all levels. With expert guidance and a structured curriculum, we ensure an enriching learning experience.</p>
-            <ul class="features">
-                <li>Comprehensive courses for <strong>various subjects</strong></li>
-                <li>Student-friendly <strong>resources & study materials</strong></li>
-                <li>Fully <strong>mobile-friendly & responsive</strong></li>
-            </ul>
-            <div class="links">
-                <a href="https://shruticlasses.github.io/home/" target="_blank" class="button">View Demo</a>
-            </div>
-        </div>
-        <div class="project animate__animated animate__fadeInUp">
-            <h2>World's Best Mother – Deepti Garg</h2>
-            <p>A heartfelt tribute to my mentor, counselor, and unwavering support—my mother, Deepti Garg. This is my 30th website, dedicated to honoring her love and guidance throughout my life.</p>
-            <ul class="features">
-                <li>A touching <strong>tribute website</strong></li>
-                <li>Elegant and <strong>responsive design</strong></li>
-                <li>Includes a special <strong>birthday countdown</strong></li>
-            </ul>
-            <div class="links">
-                <a href="https://vanshsafe-site.github.io/worldsbestmom.com/" target="_blank" class="button">View Website</a>
-            </div>
-        </div>
-        <div class="project animate__animated animate__fadeInUp">
-            <h2>Vilmora Pro – Basic Photo Color Grader</h2>
-            <p>A simple yet powerful tool for enhancing images with adjustable exposure, contrast, saturation, and effects like vignette. Includes a wide range of filters and editing options such as rotation and flipping.</p>
-            <ul class="features">
-              <li>Real-time <strong>color grading</strong></li>
-              <li>Comprehensive <strong>image adjustments</strong></li>
-              <li>Instantly <strong>download edited images</strong></li>
-            </ul>
-            <div class="links">
-              <a href="https://vanshsafe-site.github.io/vilmora.com/" target="_blank" class="button">View Website</a>
-            </div>
-          </div>          
-        
-        
-        
-        
-        <!-- AI-Generated Designs via Prompt Engineering -->
-<h2 class="section-title">AI-Generated Designs via Prompt Engineering</h2>
-
-<div class="example animate__animated animate__fadeInUp">
-    <h3>E-Commerce Website Design - Dukaan</h3>
-    <p>
-        This project reimagines the online shopping experience for a fashion retail brand, 
-        featuring a clean product grid, bold call-to-action buttons, and intuitive navigation. 
-        The design focuses on vibrant visuals and a modern layout to enhance user engagement 
-        and conversion rates.
-    </p>
-    <div class="results">
-        <!-- View PDF Button Instead of an Image -->
-        <a href="portfolio designs/E-Commerece Website.pdf" target="_blank" 
-           style="
-                display: inline-block;
-                padding: 0.75rem 1.5rem;
-                background-color: var(--primary-color);
-                color: #fff;
-                text-decoration: none;
-                border-radius: 0.5rem;
-                margin-top: 1rem;
-            ">
-            View PDF
-        </a>
     </div>
-</div>
 
-<div class="example animate__animated animate__fadeInUp">
-    <h3>Music Streaming Site Design - Vinova</h3>
-    <p>
-        This project features a vibrant and immersive design for a modern music streaming platform.
-        The interface highlights album art, curated playlists, and intuitive navigation to ensure an engaging user experience.
-        The design emphasizes bold typography, dynamic imagery, and seamless interactions for both casual listeners and dedicated music fans.
-    </p>
-    <div class="results">
-        <a href="portfolio designs/Music streaming site.pdf" target="_blank" 
-           style="
-                display: inline-block;
-                padding: 0.75rem 1.5rem;
-                background-color: var(--primary-color);
-                color: #fff;
-                text-decoration: none;
-                border-radius: 0.5rem;
-                margin-top: 1rem;
-            ">
-            View PDF
-        </a>
+    <div class="example animate__animated animate__fadeInUp">
+        <h3>Problem: Build an A.I</h3>
+        <div class="prompt-section">
+            <div class="prompt-label">Before:</div>
+            <p>"How to Build an AI"</p>
+        </div>
+        <div class="prompt-section">
+            <div class="prompt-label">After:</div>
+            <p>"Create a chatbot in HTML CSS and JS which takes user input and checks for specific keywords like 'talk', 'help' and gives back suitable pre-coded responses"</p>
+        </div>
+        <div class="results">
+            <img src="result2.png" alt="AI Building Result">
+        </div>
     </div>
-</div>
+    <div class="example animate__animated animate__fadeInUp">
+        <h3>Problem: Automating work</h3>
+        <div class="prompt-section">
+            <div class="prompt-label">Before:</div>
+            <p>"Create a program that automatically watches my social media videos"</p>
+        </div>
+        <div class="prompt-section">
+            <div class="prompt-label">After:</div>
+            <p>"Create a Python script that automates visiting a video link, plays it for a few seconds, then closes it and repeats the task."</p>
+        </div>
+        <div class="results">
+            <img src="result3.png" alt="AI Building Result">
+        </div>
+    </div>
 
-
-<div class="example animate__animated animate__fadeInUp">
-    <h3>Personal Finance Management App Design - Budget Saathi</h3>
-    <p>
-        This project showcases a modern, minimalist UI for a personal finance management app. The design features a clean layout with intuitive data visualizations, allowing users to easily track their income, expenses, and budgeting goals. With a neutral color palette and clear typography, the interface ensures that key financial metrics are accessible at a glance while maintaining an elegant and user-friendly experience.
-    </p>
-    <div class="results">
-        <a href="portfolio designs/Personal Finance Management App.pdf" target="_blank" 
-           style="
-                display: inline-block;
-                padding: 0.75rem 1.5rem;
-                background-color: var(--primary-color);
-                color: #fff;
-                text-decoration: none;
-                border-radius: 0.5rem;
-                margin-top: 1rem;
-            ">
-            View PDF
-        </a>
-    </div>
-</div>
-
-<div class="example animate__animated animate__fadeInUp">
-    <h3>Smart Home Control Design - Smart Niyantrak</h3>
-    <p>
-        This project showcases a sleek and modern UI for a smart home control system named "Niyantrak." The design integrates control panels for lighting, temperature, security, and more into a unified, user-friendly interface. Using a dark theme with vivid accent colors, the layout emphasizes clarity and intuitive navigation, ensuring that users can monitor and manage their home environment with ease.
-    </p>
-    <div class="results">
-        <a href="portfolio designs/Smart Home Control.pdf" target="_blank" 
-           style="
-                display: inline-block;
-                padding: 0.75rem 1.5rem;
-                background-color: var(--primary-color);
-                color: #fff;
-                text-decoration: none;
-                border-radius: 0.5rem;
-                margin-top: 1rem;
-            ">
-            View PDF
-        </a>
-    </div>
-</div>
-
-<div class="example animate__animated animate__fadeInUp">
-    <h3>Travel Agency Website Design - Safar</h3>
-    <p>
-        This project showcases a dynamic and engaging UI for a travel agency website called "Safar." The design offers a visually immersive experience with high-quality destination imagery, an intuitive booking interface, and clear navigation. Bold typography and vibrant color accents evoke a sense of adventure, making it easy for users to explore travel options and plan their journeys.
-    </p>
-    <div class="results">
-        <a href="portfolio designs/Travel Agnecy Site.pdf" target="_blank" 
-           style="
-                display: inline-block;
-                padding: 0.75rem 1.5rem;
-                background-color: var(--primary-color);
-                color: #fff;
-                text-decoration: none;
-                border-radius: 0.5rem;
-                margin-top: 1rem;
-            ">
-            View PDF
-        </a>
-    </div>
-</div>
-       
-           
-        <h2 class="section-title">Certifications</h2>
-    <div class="project animate__animated animate__fadeInUp">
-        <h2>Junior Penetration Tester (Level 1)</h2>
-        <p>Certified by <a href="https://tryhackme.com/" target="_blank" style="color: var(--primary-color); text-decoration: none;">TryHackMe</a></p>
-        <ul class="features">
-            <li>Experience with <strong>Gobuster</strong> for directory and subdomain enumeration</li>
-            <li>Completed real-world attack simulations</li>
-        </ul>
-        <img src="jpt.jpg" alt="TryHackMe Certificate" style="width: 100%; max-width: 600px; border-radius: 0.5rem; margin-top: 1rem; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
-    </div> 
-    <div class="project animate__animated animate__fadeInUp">
-        <h2>Prompt Engineering Certification</h2>
-        <p>Certified by <a href="https://learn.deeplearning.ai/" target="_blank" style="color: var(--primary-color); text-decoration: none;">DeepLearning.AI</a> in collaboration with <a href="https://openai.com/" target="_blank" style="color: var(--primary-color); text-decoration: none;">OpenAI</a></p>
-        <ul class="features">
-            <li>Hands-on experience with <strong>Prompt Optimization</strong> and <strong>Natural Language Processing</strong></li>
-            <li>Developed real-world prompt engineering strategies for AI-based applications</li>
-        </ul>
-        <img src="engineer.png" alt="Prompt Engineering Certificate" style="width: 100%; max-width: 600px; border-radius: 0.5rem; margin-top: 1rem; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
-    </div>    
-    <div class="project animate__animated animate__fadeInUp">
-        <h2>UI/UX Developer (Beginner) Certification</h2>
-        <p>Certified by <a href="https://www.mygreatlearning.com/" target="_blank" style="color: var(--primary-color); text-decoration: none;">Great Learning Academy</a></p>
-        <ul class="features">
-            <li>Gained knowledge in <strong>UI/UX Design Principles</strong> and <strong>Prototyping</strong></li>
-            <li>Learned best practices for designing <strong>user-friendly interfaces </strong>like</li><strong> Wireframing</strong>
-        </ul>
-        <img src="UX.png" alt="UI/UX Developer Certificate" style="width: 100%; max-width: 600px; border-radius: 0.5rem; margin-top: 1rem; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
-    </div>
-    <div class="project animate__animated animate__fadeInUp">
-        <h2>Web Designer Certification</h2>
-        <p>Certified by <a href="https://www.freecodecamp.org/" target="_blank" style="color: var(--primary-color); text-decoration: none;">freeCodeCamp</a></p>
-        <ul class="features">
-            <li>Developed skills in <strong>HTML</strong> to structure modern web content</li>
-            <li>Developed skills in <strong>CSS</strong> for styling, layout, and responsive design</li>
-            <li>Completed 5 certification tests to earn this certificate</li>
-        </ul>
-        <img src="webdesign certificate.png" alt="Web Designer Certification" style="width: 100%; max-width: 600px; border-radius: 0.5rem; margin-top: 1rem; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
-    </div>
-    
     <section id="contact">
         <div class="container">
             <h2 class="section-title">Contact Me</h2>
@@ -669,12 +102,11 @@
             </p>            
         </div>
     </section>
-    
     </div>
-    
     
     <footer>
         <p>&copy; 2025 Vansh Garg. All rights reserved.</p>
     </footer>
+    <script src="script.js"></script>
 </body>
-</html>
+</html> 
