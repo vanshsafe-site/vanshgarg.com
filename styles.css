@@ -211,11 +211,33 @@ color: var(--secondary-color); /* Optional hover effect */
     align-items: center;
 }
 
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
 .nav-logo {
     font-size: 1.5rem;
     font-weight: 700;
     color: var(--primary-color);
     text-decoration: none;
+}
+
+.vector-js {
+    background: linear-gradient(45deg, #6366f1, #4f46e5);
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    color: white !important;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.vector-js:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(45deg, #4f46e5, #6366f1);
 }
 
 .nav-links {
@@ -286,6 +308,11 @@ color: var(--secondary-color); /* Optional hover effect */
         width: 24px;
         height: 24px;
         stroke: var(--text-color);
+    }
+
+    .nav-left {
+        flex-grow: 1;
+        justify-content: space-between;
     }
 }
 
