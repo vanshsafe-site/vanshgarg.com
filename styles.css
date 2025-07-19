@@ -20,33 +20,125 @@ header {
     padding: 4rem 2rem;
     text-align: center;
     color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .profile-pic {
     width: 180px;
     height: 180px;
     border-radius: 50%;
-    border: 4px solid white;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: none;
+    position: relative;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1),
+                0 0 20px rgba(255, 255, 255, 0.6),
+                0 0 40px rgba(255, 255, 255, 0.3);
     margin-bottom: 1.5rem;
     object-fit: cover;
-    transition: transform 0.3s ease;
+    transition: all 0.3s ease;
+    display: block;
+    padding: 6px;
+    background: linear-gradient(
+        45deg,
+        rgba(255, 255, 255, 0.95) 0%,
+        rgba(255, 255, 255, 0.6) 25%,
+        rgba(255, 255, 255, 0.3) 50%,
+        rgba(255, 255, 255, 0.6) 75%,
+        rgba(255, 255, 255, 0.95) 100%
+    );
+    animation: borderGlow 3s linear infinite;
+}
+
+.profile-pic::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 50%;
+    padding: 6px;
+    background: linear-gradient(
+        135deg,
+        rgba(255, 255, 255, 1) 0%,
+        rgba(255, 255, 255, 0.5) 25%,
+        rgba(255, 255, 255, 0.2) 50%,
+        rgba(255, 255, 255, 0.5) 75%,
+        rgba(255, 255, 255, 1) 100%
+    );
+    -webkit-mask: 
+        linear-gradient(#fff 0 0) content-box, 
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+    animation: borderRotate 8s linear infinite;
+}
+
+@keyframes borderGlow {
+    0%, 100% {
+        filter: brightness(1);
+    }
+    50% {
+        filter: brightness(1.2);
+    }
+}
+
+@keyframes borderRotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 .profile-pic:hover {
     transform: scale(1.05);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1),
+                0 0 20px rgba(255, 255, 255, 0.6),
+                0 0 40px rgba(255, 255, 255, 0.4);
+}
+
+.profile-pic:hover::before {
+    animation: borderRotate 2s linear infinite;
 }
 
 h1 {
     font-size: 2.5rem;
     margin: 0.5rem 0;
     font-weight: 700;
+    background: linear-gradient(
+        to right,
+        #ffffff 0%,
+        #c7d2fe 20%,
+        #ffffff 40%,
+        #e0e7ff 60%,
+        #ffffff 80%,
+        #c7d2fe 100%
+    );
+    background-size: 200% auto;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 3s linear infinite;
+    display: block;
+    text-align: center;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    filter: brightness(1.2) contrast(1.1);
+    line-height: 1.2;
+    width: 100%;
 }
 
 header p {
     font-size: 1.2rem;
     opacity: 0.9;
     margin: 0.5rem 0;
+    text-align: center;
+    width: 100%;
+    max-width: 800px;
 }
 
 .container {
@@ -213,7 +305,7 @@ color: var(--secondary-color); /* Optional hover effect */
 
 .nav-left {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: 0.5rem;
 }
 
@@ -225,21 +317,29 @@ color: var(--secondary-color); /* Optional hover effect */
     margin-right: 0.5rem;
 }
 
+.nav-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    padding-top: 0.15rem;
+}
+
 .vector-js, .myoga-btn {
     background: linear-gradient(45deg, #6366f1, #4f46e5);
-    padding: 0.35rem 0.7rem;
-    border-radius: 0.4rem;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.3rem;
     color: white !important;
     font-weight: bold;
     transition: all 0.3s ease;
     text-decoration: none;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     white-space: nowrap;
+    line-height: 1;
 }
 
 .vector-js:hover, .myoga-btn:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transform: translateY(-1px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     background: linear-gradient(45deg, #4f46e5, #6366f1);
 }
 
@@ -335,39 +435,43 @@ color: var(--secondary-color); /* Optional hover effect */
     }
 
 .founder-title {
-    background: linear-gradient(
-        to right,
+    background: radial-gradient(
+        circle at center,
         #ffffff 0%,
-        #c7d2fe 20%,
-        #ffffff 40%,
-        #e0e7ff 60%,
-        #ffffff 80%,
-        #c7d2fe 100%
+        #c7d2fe 30%,
+        #ffffff 50%,
+        #e0e7ff 70%,
+        #ffffff 100%
     );
-    background-size: 200% auto;
+    background-size: 200% 200%;
     color: transparent;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    animation: shine 3s linear infinite;
+    animation: shineFromCenter 3s ease-in-out infinite;
     display: inline-block;
-    padding: 2px 0;
     font-weight: bold;
     font-size: 1.2em;
     text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
     filter: brightness(1.2) contrast(1.1);
 }
 
-@keyframes shine {
-    to {
-        background-position: 200% center;
+@keyframes shineFromCenter {
+    0%, 100% {
+        background-position: center center;
+        background-size: 100% 100%;
+    }
+    50% {
+        background-position: center center;
+        background-size: 200% 200%;
     }
 }
 
 .founder-container {
     display: inline-block;
     position: relative;
-    padding: 2px 5px;
+    padding: 2px 0;
+    margin: 2px 0;
 }
 
 .founder-container::after {
@@ -377,15 +481,13 @@ color: var(--secondary-color); /* Optional hover effect */
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(45deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.1));
-    border-radius: 4px;
-    transform: scaleX(0);
-    transform-origin: left;
+    background: transparent;
+    transform: scale(0);
+    transform-origin: center;
     transition: transform 0.3s ease;
-    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
 }
 
 .founder-container:hover::after {
-    transform: scaleX(1);
+    transform: scale(1);
 }
     
