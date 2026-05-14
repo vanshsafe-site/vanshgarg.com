@@ -670,3 +670,7 @@ footer {
     border-radius:50%;
     pointer-events:none;
   }
+  .typewriter-wrap{
+    margin-top: 0.8rem;
+    margin-bottom: 1.4rem;
+  }
