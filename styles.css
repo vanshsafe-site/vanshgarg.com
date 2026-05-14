@@ -654,3 +654,19 @@ footer {
 .typewriter-wrap {
   font-size: clamp(1rem, 1.9vw, 1.22rem);     /* was 0.95–1.15rem */
 }
+/* Orbit wrapper around name */
+.name-orbit-wrap{
+    position:relative;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+  }
+  
+  /* Keeps particles centered properly */
+  .name-orbit-wrap .orbital-dot{
+    position:absolute;
+    top:50%;
+    left:50%;
+    border-radius:50%;
+    pointer-events:none;
+  }

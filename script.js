@@ -330,43 +330,63 @@
     }
   
     /* ── 11. ORBITAL DOTS ─────────────────────────────── */
-    function initOrbitalDots() {
-      const pic = document.querySelector('.profile-pic');
-      if (!pic) return;
+    /* ── 11. ORBITAL DOTS AROUND NAME ────────────────────── */
+function initOrbitalDots() {
+
+    const nameEl = document.querySelector('header h1');
+    if (!nameEl) return;
   
-      const sphere = document.createElement('div');
-      sphere.className = 'hero-sphere';
-      pic.parentNode.insertBefore(sphere, pic);
-      sphere.appendChild(pic);
+    /* Wrap h1 */
+    const wrap = document.createElement('div');
+    wrap.className = 'name-orbit-wrap';
   
-      const orbs = [
-        { color: '#7eb8f7', size: 10, radius: 74, speed: 0.0014, offset: 0       },
-        { color: '#b28aff', size:  8, radius: 90, speed: -0.0009, offset: 2.1    },
-        { color: '#52e8c8', size:  7, radius: 62, speed: 0.0019,  offset: 4.4    },
-      ];
+    nameEl.parentNode.insertBefore(wrap, nameEl);
+    wrap.appendChild(nameEl);
   
-      const dots = orbs.map(o => {
-        const d = document.createElement('div');
-        d.className = 'orbital-dot';
-        d.style.cssText = `width:${o.size}px;height:${o.size}px;background:${o.color};box-shadow:0 0 10px ${o.color};`;
-        sphere.appendChild(d);
-        return { el: d, ...o, angle: o.offset };
+    const orbs = [
+      { color: '#7eb8f7', size: 10, radiusX: 210, radiusY: 55, speed: 0.0013, angle: 0 },
+      { color: '#b28aff', size: 8, radiusX: 250, radiusY: 70, speed: -0.0010, angle: 2 },
+      { color: '#52e8c8', size: 7, radiusX: 180, radiusY: 45, speed: 0.0017, angle: 4 },
+    ];
+  
+    const dots = orbs.map(o => {
+  
+      const d = document.createElement('div');
+      d.className = 'orbital-dot';
+  
+      d.style.cssText = `
+        width:${o.size}px;
+        height:${o.size}px;
+        background:${o.color};
+        box-shadow:0 0 12px ${o.color};
+      `;
+  
+      wrap.appendChild(d);
+  
+      return { el:d, ...o };
+  
+    });
+  
+    function animate() {
+  
+      dots.forEach(dot => {
+  
+        dot.angle += dot.speed * 16;
+  
+        const x = Math.cos(dot.angle) * dot.radiusX;
+        const y = Math.sin(dot.angle) * dot.radiusY;
+  
+        dot.el.style.transform =
+          `translate(${x}px, ${y}px)`;
+  
       });
   
-      function animOrbs(t) {
-        dots.forEach(d => {
-          d.angle += d.speed * 16;
-          const x = Math.cos(d.angle) * d.radius;
-          const y = Math.sin(d.angle) * d.radius * 0.4;
-          d.el.style.transform = `translate(${x - d.size/2}px, ${y - d.size/2}px)`;
-          d.el.style.zIndex = y > 0 ? 3 : 1;
-          d.el.style.opacity = 0.7 + 0.3 * ((y + d.radius * 0.4) / (d.radius * 0.8));
-        });
-        requestAnimationFrame(animOrbs);
-      }
-      requestAnimationFrame(animOrbs);
+      requestAnimationFrame(animate);
+  
     }
   
+    animate();
+  }
     /* ── 12. NEURAL NETWORK SVG ───────────────────────── */
     function injectNeuralNet() {
       const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
